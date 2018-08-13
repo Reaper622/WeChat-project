@@ -1,0 +1,65 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.2.2",
+	"appid": "wx2daf43083c9c2174",
+	"projectname": "%E5%91%A8%E6%B8%B8%E5%9B%A2",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 3,
+			"list": [
+				{
+					"id": -1,
+					"name": "首页开发",
+					"pathName": "pages/home/index",
+					"query": ""
+				},
+				{
+					"id": 1,
+					"name": "组件开发",
+					"pathName": "component/inputText/inputText",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发布开发",
+					"pathName": "pages/publish/index",
+					"query": ""
+				},
+				{
+					"id": 3,
+					"name": "开发",
+					"pathName": "pages/activity-tosign/index",
+					"query": ""
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,60 @@
+.topPic{
+  position: absolute;
+  width:750rpx;
+  height:260rpx;
+}
+.formArea1{
+  position: absolute;
+  top: 270rpx;
+  width: 750rpx;
+  height: auto;
+  background-color: #ffffff;
+}
+.formArea2{
+  position: absolute;
+  top: 810rpx;
+  width: 750rpx;
+  background-color: #ffffff;
+}
+.updata{
+  position: absolute;
+  top: 1030rpx;
+  width: 710rpx;
+  height: 60rpx;
+  left: 20rpx; 
+  background:rgba(247,132,69,1);
+  border-radius:30rpx;
+  color: #ffffff;
+  font-size: 26rpx;
+  line-height: 60rpx;
+}
+.container{
+  width:750rpx;
+  height: 88rpx;
+  border-bottom: 1rpx solid #DBDADA;
+}
+.placeholder{
+  font-family:SourceHanSansCN-Regular;
+  text-align: right;
+  line-height: 88rpx;
+  color: rgba(51,51,51,0.6);
+  font-size:32rpx;
+}
+.inputStyle{
+  font-family:SourceHanSansCN-Regular;
+  position: relative;
+  padding-left: 50rpx;
+  width: 592rpx;
+  height: 88rpx;
+  text-align: right;
+}
+.title{
+  font-family:SourceHanSansCN-Regular;
+  font-weight: bold;
+  position: relative;
+  left: 24rpx;
+  float: left;
+  line-height: 88rpx;
+  width: auto;
+  font-size: 32rpx;
+}

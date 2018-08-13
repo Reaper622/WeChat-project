@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/start/index",
+    "pages/home/index",
+    "pages/mine/index",
+    "pages/publish/index",
+    "pages/publishPage/index",
+    "pages/activity-join/index",
+    "pages/activity-publish/index",
+    "pages/sign-up/index",
+    "pages/activity-indetail/index",
+    "pages/signup-people/index",
+    "pages/activity-indoing/index",
+    "pages/activity-tosign/index",
+    "pages/check-in/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#efefef",
+    "navigationBarBackgroundColor": "#49AB0A",
+    "navigationBarTitleText": "周游团",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar":{
+    "color": "#B3B3B3",
+    "selectedColor": "#49AB0A",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list":[{
+      "pagePath":"pages/home/index",
+      "text":"首页",
+      "iconPath":"/images/首页_normal.png",
+      "selectedIconPath":"/images/首页_pressed.png"
+    },
+    {
+      "pagePath": "pages/publish/index",
+      "text": "发布",
+      "iconPath": "/images/发布_normal.png",
+      "selectedIconPath": "/images/发布_pressed.png"
+    },
+    {
+      "pagePath": "pages/mine/index",
+      "text": "我的",
+      "iconPath": "/images/我的_normal.png",
+      "selectedIconPath": "/images/我的_pressed.png"
+    }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000
+  }
+}

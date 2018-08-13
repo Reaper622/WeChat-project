@@ -1,0 +1,11 @@
+<!--pages/activity-indoing/index.wxml-->
+<block wx:for="{{activities}}" wx:for-item="activity" wx:key="{{activity}}">
+<activity  url="{{activity.url}}" title="{{activity.title}}" time="{{activity.time}}" address="{{activity.address}}" number="{{activity.number}}" bindtap="tapactivity" data-index="{{activity.id}}" ></activity>
+<view class='tapArea' wx:if="{{activity.istapped}}">
+  <text class='title'>最近活动照\n</text>
+  <image class='pic' src='{{activity.pics[0]}}'></image>
+  <image class='pic' src='{{activity.pics[1]}}'></image>
+  <button class='check-in' bindtap='checkIn'>签到</button>
+  <button class='upload' bindtap='upload' >我也去上传</button>
+</view>
+</block>

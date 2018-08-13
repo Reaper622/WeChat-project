@@ -1,0 +1,1 @@
+<activity wx:for="{{activities}}" wx:for-item="activity" wx:key="{{activity}}" url="{{activity.url}}" title="{{activity.title}}" time="{{activity.time}}" address="{{activity.address}}" bindtap="redirect"></activity>

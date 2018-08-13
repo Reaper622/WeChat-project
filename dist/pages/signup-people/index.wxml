@@ -1,0 +1,12 @@
+<text class="showSum">共{{sum}}人</text>
+<block wx:for="{{people}}" wx:for-item="person" wx:key="{{person.id}}">
+<view class='personInfo1'>
+  <wxc-avatar src="{{person.url}}" class="avatar"></wxc-avatar>
+  <text class='name'>{{person.name}}</text>
+  <text class='time'>{{person.time}}</text>
+</view>
+<view class='personInfo2'>
+  <text class='phone'>联系电话</text>
+  <text class='phoneNumber'>{{person.phone}}</text>
+</view>
+</block>

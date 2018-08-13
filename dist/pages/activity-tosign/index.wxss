@@ -1,0 +1,254 @@
+/* pages/activity-tosign/index.wxss */
+/* pages/activity-indetail/index.wxss */
+.topPic{
+  position: absolute;
+  width:750rpx;
+  height:260rpx;
+}
+.titleBar{
+  position: absolute;
+  top: 260rpx;
+  width:750rpx;
+  height:80rpx;
+  background:rgba(255,255,255,1);
+}
+.timeBar{
+  position: absolute;
+  width:750rpx;
+  height:80rpx;
+  top: 348rpx;
+  background:rgba(255,255,255,1);
+}
+.addressBar{
+  position: absolute;
+  width:750rpx;
+  height:80rpx;
+  top: 428rpx;
+  background:rgba(255,255,255,1);
+}
+.contentBar{
+  position: absolute;
+  width:750rpx;
+  height:300rpx;
+  top: 508rpx;
+  background:rgba(255,255,255,1);
+}
+.contents{
+  display: block;
+  text-align: left;
+  position: relative;
+  padding-left: 44rpx;
+  padding-right: 25rpx;
+  color: #7D7C7C;
+  line-height: 36rpx;
+  font-size: 22rpx;
+}
+.title{
+  color: #F3A55F;
+  font-size:22rpx;
+  line-height: 60rpx;
+  padding-left: 25rpx;
+}
+.publisher{
+  position: absolute;
+  width:750rpx;
+  height:181rpx;
+  top: 818rpx;
+  background:rgba(255,255,255,1);
+}
+.publisherBar{
+  position: relative;
+  width: 750rpx;
+  height: 60rpx;
+  border-bottom: 1rpx solid #DBDADA;
+}
+.publisherInfo{
+  position: relative;
+  width:750rpx;
+  height:120rpx;
+}
+.publisherAvatar{
+  position: relative;
+  float: left;
+  display: block;
+  width: 60rpx;
+  height: 60rpx;
+  top: 15rpx;
+  left: 24rpx;
+}
+.publisherName{
+  position: relative;
+  left: 70rpx;
+  top: 40rpx;
+  font-size:28rpx;
+  color:rgba(51,51,51,1);
+  line-height:36rpx;
+}
+.publisherPhone{
+  position: relative;
+  left: 120rpx;
+  top: 40rpx;
+  font-size:28rpx;
+  color:rgba(101,182,233,1);
+  line-height:36rpx;
+}
+.people{
+  position: absolute;
+  width: 750rpx;
+  height: 191rpx;
+  top: 1009rpx;
+  background:rgba(255,255,255,1);
+}
+.peopleBar{
+  position: relative;
+  width: 750rpx;
+  height: 60rpx;
+  border-bottom: 1rpx solid #DBDADA;
+}
+.peopleInfo{
+  position: relative;
+  width: 750rpx;
+  height: 130rpx;
+}
+.pics{
+  position: absolute;
+  width: 750rpx;
+  height: 321rpx;
+  top: 1210rpx;
+  background:rgba(255,255,255,1);
+}
+.picBar{
+  position: relative;
+  width: 750rpx;
+  height: 60rpx;
+  border-bottom: 1rpx solid #DBDADA;
+}
+.titleContent{
+  position: relative;
+  font-size:28rpx;
+  height: 28rpx;
+  color: rgba(51,50,50,1);
+  line-height: 80rpx;
+  padding-left: 25rpx;
+  font-weight: bold;
+}
+.cost{
+  position: relative;
+  font-size:28rpx;
+  height: 28rpx;
+  line-height: 80rpx;
+  float: right;
+  padding-right: 26rpx;
+  color:rgba(243,165,95,1);
+}
+.timeIcon{
+  position: relative;
+  width:26rpx;
+  height:26rpx;
+  left: 25rpx;
+}
+.word{
+  position: relative;
+  padding-left: 72rpx;
+  width: auto;
+  height: 26rpx;
+  font-size: 26rpx;
+  color: #7D7C7C;
+  line-height: 80rpx;
+}
+.addressIcon{
+  position: relative;
+  width:24rpx;
+  height:31rpx;
+  left: 25rpx;
+}
+.person{
+  display: inline-block;
+  width: 54rpx;
+  height: auto;
+  margin-top: 30rpx;
+  margin-left: 14rpx;
+  margin-right: 14rpx;
+  text-align: center;
+}
+.peopleAvatar{
+  position: relative;
+  display: block;
+  width: 50rpx;
+  height: 50rpx;
+  padding-left: 2rpx;
+}
+.personName{
+  position: relative;
+  width: 54rpx;
+  height: 18rpx;
+  font-size: 18rpx;
+  color:rgba(51,51,51,1);
+  line-height:36rpx;
+}
+.sign{
+  position: relative;
+  float: right;
+  right: 24rpx;
+  line-height: 130rpx;
+  font-size: 50rpx;
+  color: #B3B3B3;
+}
+.uploadIcon{
+  position: relative;
+  display: inline-block;
+  width: 22rpx;
+  height: 17rpx;
+  padding-left: 550rpx;
+}
+.uploadWord{
+  position: relative;
+  font-size:22rpx;
+  color:rgba(142,200,238,1);
+  line-height:36rpx;
+  padding-left: 10rpx;
+}
+.showPic{
+  width:242rpx;
+  height:260rpx;
+  border-radius:2rpx;
+  display: inline-block;
+}
+.Image{
+  position: relative;
+  width: 210rpx;
+  height: 180rpx;
+  margin-top: 16rpx;
+  margin-left: 16rpx;
+}
+.picName{
+  position: relative;
+  font-size:20rpx;
+  color:rgba(51,51,51,1);
+  margin-left: 16rpx;
+}
+.footNav{
+  position: fixed;
+  bottom: 0;
+  width: 750rpx;
+  height: 90rpx;
+}
+.share{
+  display: inline-block;
+  width: 350rpx;
+  height: 90rpx;
+  border-radius: 0;
+  font-size:32rpx;
+  color:rgba(51,51,51,1);
+  line-height:90rpx;
+}
+.signUp{
+  display: inline-block;
+  width:400rpx;
+  height:90rpx;
+  background:rgba(247,132,69,1);
+  border-radius: 0;
+  font-size:32rpx;
+  color:rgba(255,255,255,1);
+  line-height:90rpx;
+}

@@ -1,0 +1,44 @@
+/* pages/activity-indoing/index.wxss */
+.tapArea{
+  width: 750rpx;
+  height: 230rpx;
+  background: rgba(255,255,255,1);
+}
+.title{
+  color: #F3A55F;
+  font-size:22rpx;
+  line-height: 60rpx;
+  padding-left: 25rpx;
+}
+.pic{
+  display: inline-block;
+  width: 160rpx;
+  height: 120rpx;
+  margin-left: 24rpx;
+}
+.check-in{
+  display: inline-block;
+  width:100rpx;
+  height:50rpx;
+  background:rgba(247,198,67,1);
+  border-radius:25rpx;
+  font-size: 24rpx;
+  color: rgba(51,50,50,1);
+  line-height: 50rpx;
+  position: relative;
+  left: 32rpx;
+  top: -30rpx;
+}
+.upload{
+  display: inline-block;
+  width: 160rpx;
+  height: 50rpx;
+  background:rgba(247,132,69,1);
+  border-radius:25rpx;
+  font-size:22rpx;
+  color:rgba(255,255,255,1);
+  line-height: 50rpx;
+  position: relative;
+  left: 70rpx;
+  top: -30rpx;
+}

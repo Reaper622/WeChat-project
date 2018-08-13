@@ -1,0 +1,16 @@
+<template>
+  <view>Publish Page</view>
+</template>
+
+<script>
+export default {
+  config: {
+    navigationBarTitleText: '发布',
+    usingComponents: {}
+  },
+  data: {}
+}
+</script>
+
+<style>
+</style>

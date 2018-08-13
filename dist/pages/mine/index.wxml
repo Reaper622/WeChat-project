@@ -1,0 +1,18 @@
+<view class='top'>
+  <wxc-avatar class="avatar" src="/images/mine/user.png" ></wxc-avatar>
+  <text class="username">张石石</text>
+  <text class='edit'>编辑个人资料</text>
+</view>
+
+<view class='content'>
+  <navigator class='nav'url="/pages/activity-join/index">
+  <image src='/images/mine/icon.png' class='icon-fire'></image>
+  <text class='words'>我参与的活动</text>
+  <text class='mark'>></text>
+  </navigator>
+  <navigator class='nav'url="/pages/activity-publish/index">
+  <image src='/images/activity/time.png' class='icon-time'></image>
+  <text class='words'>我发布的活动</text>
+  <text class='mark'>></text>
+  </navigator>
+</view>

@@ -1,0 +1,16 @@
+<template>
+  <view>Start Page</view>
+</template>
+
+<script>
+export default {
+  config: {
+    navigationBarTitleText: '启动页',
+    usingComponents: {}
+  },
+  data: {}
+}
+</script>
+
+<style>
+</style>

@@ -1,0 +1,16 @@
+<template>
+  <view>PublishPage Page</view>
+</template>
+
+<script>
+export default {
+  config: {
+    navigationBarTitleText: '布的活动',
+    usingComponents: {}
+  },
+  data: {}
+}
+</script>
+
+<style>
+</style>

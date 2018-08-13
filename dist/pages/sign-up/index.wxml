@@ -1,0 +1,18 @@
+<view class='container'>
+  <text class='title'>姓名</text>
+  <input type='text' class='inputStyle' placeholder="报名者姓名" placeholder-class='placeholder' maxlength='18' bindinput='usernameInput' />
+</view>
+<view class='container'>
+  <text class='title'>电话</text>
+  <input type='number' class='inputStyle' placeholder="填写联系方式" placeholder-class='placeholder' maxlength='11' bindinput='phoneNumberInput' />
+</view>
+<view class='container'>
+  <text class='title'>大人</text>
+  <input type='number' class='inputStyle' placeholder="填写大人的人数" placeholder-class='placeholder' maxlength='3' bindinput='adultNumberInput' />
+</view>
+<view class='container'>
+  <text class='title'>小孩</text>
+  <input type='number' class='inputStyle' placeholder="填写小孩的人数" placeholder-class='placeholder' maxlength='3' bindinput='kidsNumberInput' />
+</view>
+
+<button bindtap='submitIt' class='updata'>提交</button>

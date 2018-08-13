@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "wxc-avatar": "../../packages/@minui/wxc-avatar/dist/index"
+  },
+  "navigationBarTitleText": "活动详情"
+}

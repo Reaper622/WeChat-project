@@ -1,0 +1,39 @@
+<image src="/images/publish/top.png" class="topPic"></image>
+<view class='formArea1'>
+  <view class='container'>
+    <text class='title'>标题</text>
+    <input type='text' class='inputStyle' placeholder="输入活动标题" placeholder-class='placeholder' maxlength='18' bindinput='titleInput' />
+  </view>
+  <view class='container'>
+    <text class='title'>人数</text>
+    <input type='number' class='inputStyle' placeholder="输入参与人数，不填表示不限制" placeholder-class='placeholder' maxlength='3' bindinput='numberInput' />
+  </view>
+  <view class='container'>
+    <text class='title'>时间</text>
+    <input type='text' class='inputStyle' placeholder="输入活动时间" placeholder-class='placeholder' maxlength='18' bindinput='timeInput' />
+  </view>
+  <view class='container'>
+    <text class='title'>地址</text>
+    <input type='text' class='inputStyle' placeholder="选择活动地址" placeholder-class='placeholder' maxlength='18' bindinput='addressInput' />
+  </view>
+  <view class='container'>
+    <text class='title'>费用</text>
+    <input type='text' class='inputStyle' placeholder="选择费用方式" placeholder-class='placeholder' maxlength='18' bindinput='costInput' />
+  </view>
+  <view class='container'>
+    <text class='title'>详情</text>
+    <input type='text' class='inputStyle' placeholder="输入活动要求" placeholder-class='placeholder' maxlength='18' bindinput='infoInput' />
+  </view>
+</view>
+<view class='formArea2'>
+  <view class='container'>
+    <text class='title'>发布人</text>
+    <input type='text' class='inputStyle' placeholder="" placeholder-class='placeholder' maxlength='18' bindinput='publisherInput' />
+  </view>
+  <view class='container'>
+    <text class='title'>电话</text>
+    <input type='text' class='inputStyle' placeholder="" placeholder-class='placeholder' maxlength='18' bindinput='phoneInput' bindblur='checkPhone' />
+  </view>
+</view>
+
+<button bindtap='show' class='updata'>立即上传</button>

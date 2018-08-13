@@ -1,0 +1,82 @@
+.top{
+  width:750rpx;
+  height:280rpx;
+  background:rgba(255,255,255,1);
+}
+.avatar {
+    display: block;
+    padding-top: 30rpx;
+    padding-left: 325rpx;
+    width: 100rpx;
+    height: 100rpx;
+}
+.username{
+  position: relative;
+  left: 323rpx;
+  top: 30rpx;
+  width:103rpx;
+  height:36rpx;
+  font-size:36rpx;
+  font-family:SourceHanSansCN-Regular;
+  color:rgba(51,51,51,1);
+}
+.edit{
+  position: relative;
+  top: 70rpx;
+  left: 203rpx;
+  width:143rpx;
+  height:24rpx;
+  font-size:24rpx;
+  font-family:SourceHanSansCN-Regular;
+  color:rgba(179,179,179,1);
+}
+.content{
+  position: relative;
+  width: 750rpx;
+  height: auto;
+  top: 30rpx;
+}
+.nav{
+  display: block;
+  width:750rpx;
+  height:80rpx;
+  background:rgba(255,255,255,1);
+  border-bottom: 2rpx solid #DBDADA;
+}
+.icon-fire{
+  position: relative;
+  display: inline-block;
+  top: 20rpx;
+  left: 34rpx;
+  width:34rpx;
+  height:40rpx;
+}
+.words{
+  position: relative;
+  display: inline-block;
+  width:189rpx;
+  height:32rpx;
+  left: 103rpx;
+  top: 12rpx;
+  font-size:32rpx;
+  font-weight: bold;
+  font-family:SourceHanSansCN-Regular;
+  color:rgba(0,0,0,1);
+}
+.mark{
+  position: relative;
+  display: block;
+  color: #BCBCBC;
+  font-size: 40rpx;
+  float: right;
+  right: 30rpx;
+  line-height: 80rpx;
+}
+.icon-time{
+  position: relative;
+  display: inline-block;
+  top: 20rpx;
+  left: 30rpx;
+  width:36rpx;
+  height:36rpx;
+}

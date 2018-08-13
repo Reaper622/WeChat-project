@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "activity": "../../component/activity/activity"
+  },
+  "navigationBarTitleText": "进行中活动"
+}

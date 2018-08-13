@@ -1,0 +1,14 @@
+<!--pages/check-in/index.wxml-->
+<text class="showSum">共{{sum}}人</text>
+<block wx:for="{{people}}" wx:for-item="person" wx:key="{{person.id}}">
+<view class='personInfo1'>
+  <wxc-avatar src="{{person.url}}" class="avatar"></wxc-avatar>
+  <text class='name'>{{person.name}}</text>
+  <block wx:if="{{person.ischecked}}">
+  <text class='time'>签到成功\n{{person.time}}</text>
+  </block>
+  <block wx:else>
+  <text class='time'>未签到</text>
+  </block>
+</view>
+</block>
