@@ -4,7 +4,7 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
@@ -13,7 +13,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.2.2",
 	"appid": "wx2daf43083c9c2174",
-	"projectname": "%E5%91%A8%E6%B8%B8%E5%9B%A2",
+	"projectname": "WeChat-Project",
 	"isGameTourist": false,
 	"condition": {
 		"search": {
@@ -56,7 +56,7 @@
 				{
 					"id": 3,
 					"name": "开发",
-					"pathName": "pages/activity-tosign/index",
+					"pathName": "pages/check-in/index",
 					"query": ""
 				}
 			]

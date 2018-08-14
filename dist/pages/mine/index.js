@@ -5,14 +5,26 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    user:{}
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function () {
-    
+    var that = this;
+    //获取当前用户
+    wx.request({
+      url: 'https://easy-mock.com/mock/5b72816677e37d07a4181f9b/wechat/user/info',
+      header:{
+        'content-type':'application/json'
+      },
+      success:function(res){
+        that.setData({
+          user:res.data.user
+        })
+      }
+    })
   },
 
   /**

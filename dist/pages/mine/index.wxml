@@ -1,6 +1,6 @@
 <view class='top'>
-  <wxc-avatar class="avatar" src="/images/mine/user.png" ></wxc-avatar>
-  <text class="username">张石石</text>
+  <wxc-avatar class="avatar" src="{{user.url}}" ></wxc-avatar>
+  <text class="username">{{user.name}}</text>
   <text class='edit'>编辑个人资料</text>
 </view>
 

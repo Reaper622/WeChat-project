@@ -5,36 +5,27 @@ Page({
    * 页面的初始数据
    */
   data: {
-      url:'/images/activity-indetail/top.png',
-      title:'奇趣小手艺 浓浓亲子情',
-      cost:'免费', 
-      time:'2018.10.01 -2018.10.05  14:00 —— 15:00',
-      address:'石桥辅正街99号红糟房',
-      content:'本活动要求参与者身体健康；参与活动前充分准备，没有不适合参加剧烈活动的疾病美丽如但不限于下列疾病：\n \n  (1) 先天性心脏病和风湿性心脏病患者;\n(2)高血压和脑血管疾病患者;\n(3)心肌炎和其他心脏病患者;\n 如遇台风，雷雨天气，活动将取消。 ',
-      publisher:{
-        url:'/images/activity-indetail/publisher.png',
-        name:'周周周',
-        phoneNumber:'13123548568'
-      },
-      people:[
-        { id: 0, url: '/images/activity-indetail/people1.png', name: '蜡笔小' },
-        { id: 1, url: '/images/activity-indetail/people2.png', name: '小蜡笔' },
-        { id: 2, url: '/images/activity-indetail/people3.png', name: '庞天' },
-        { id: 3, url: '/images/activity-indetail/people4.png', name: '小智' },
-        { id: 4, url: '/images/activity-indetail/people5.png', name: '郑尧' }
-      ],
-      album:[
-        { id: 0,  url: '/images/activity-indetail/pic1.png', name: '杨杨' },
-        { id: 1,  url: '/images/activity-indetail/pic2.png', name: '王大贵' },
-        { id: 2,  url: '/images/activity-indetail/pic3.png', name: '川川' }
-      ]
+    it:{}
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function () {
-    
+    var that =this;
+    //获取页面内容
+    wx.request({
+      url:'https://easy-mock.com/mock/5b72816677e37d07a4181f9b/wechat/activity-indetail/main',
+      header: {
+        'content-type': 'application/json'
+      },
+      success: function (res) {
+        console.log(res.data);
+        that.setData({
+          it: res.data.it
+        })
+      }
+    });
   },
 
   /**

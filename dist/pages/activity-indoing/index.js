@@ -5,54 +5,26 @@ Page({
    * 页面的初始数据
    */
   data: {
-    activities: [
-      {
-        id:0,
-        url: '/images/activity/activity.png',
-        title: '奇趣小手艺 浓浓亲子情',
-        time: '2018.10.01 - 2018.10.05',
-        address: '石桥辅正街 99 号红糟房',
-        number: '24',
-        istapped:true,
-        pics:[
-          '/images/activity-indetail/pic1.png',
-          '/images/activity-indetail/pic2.png'
-        ]
-      },
-      {
-        id:1,
-        url: '/images/activity/activity2.png',
-        title: '携手合众 你我共赢',
-        time: '2018.10.01 - 2018.10.05',
-        address: '石桥辅正街 99 号红糟房',
-        number: '34',
-        istapped:false,
-        pics: [
-          '/images/activity-indetail/pic1.png',
-          '/images/activity-indetail/pic2.png'
-        ]
-      },
-      {
-        id:2,
-        url: '/images/activity/activity3.png',
-        title: '大型亲子活动',
-        time: '2018.10.01 - 2018.10.05',
-        address: '石桥辅正街 99 号红糟房',
-        number: '34',
-        istapped:false,
-        pics: [
-          '/images/activity-indetail/pic1.png',
-          '/images/activity-indetail/pic2.png'
-        ]
-      }
-    ]
+    activities:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    var that = this;
+    //获得页面内容
+    wx.request({
+      url: 'https://easy-mock.com/mock/5b72816677e37d07a4181f9b/wechat/activity-indoing/main',
+      header:{
+        'content-type':'application/json'
+      },
+      success:function(res){
+        that.setData({
+          activities:res.data.activities
+        })
+      }
+    })
   },
 
   /**

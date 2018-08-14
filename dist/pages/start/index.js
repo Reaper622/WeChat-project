@@ -12,18 +12,17 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function () {
-    setTimeout(function(){
-      wx.redirectTo({
-        url: '../home/index'
-      })
-    },3000)
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    
+    setTimeout(function () {
+      wx.switchTab({
+        url: '/pages/home/index',
+      })
+    }, 2000)
   },
 
   /**

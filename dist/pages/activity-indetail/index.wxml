@@ -1,31 +1,31 @@
-<image src='{{url}}' class='topPic'></image>
+<image src='{{it.url}}' class='topPic'></image>
 <view class='titleBar'>
-  <text class='titleContent'>{{title}}</text>
-  <text class='cost'>{{cost}}</text>
+  <text class='titleContent'>{{it.title}}</text>
+  <text class='cost'>{{it.cost}}</text>
 </view>
 <view class='timeBar'>
   <image src='/images/activity-indetail/time.png' class='timeIcon'></image>
-  <text class='word'>{{time}}</text>
+  <text class='word'>{{it.time}}</text>
 </view>
 <view class='addressBar'>
   <image src='/images/activity-indetail/pos.png' class='addressIcon'></image>
-  <text class='word'>{{address}}</text>
+  <text class='word'>{{it.address}}</text>
 </view>
 <view class='contentBar'>
-  <text class='contents'>{{content}}</text>
+  <text class='contents'>{{it.content}}</text>
 </view>
 <view class='publisher'>
   <view class='publisherBar'><text class='title'>发布人</text></view>
   <view class='publisherInfo'>
-    <wxc-avatar class="publisherAvatar" src="{{publisher.url}}" ></wxc-avatar>
-    <text class='publisherName'>{{publisher.name}}</text>
-    <text class='publisherPhone' >{{publisher.phoneNumber}}</text>
+    <wxc-avatar class="publisherAvatar" src="{{it.publisher.url}}" ></wxc-avatar>
+    <text class='publisherName'>{{it.publisher.name}}</text>
+    <text class='publisherPhone' >{{it.publisher.phoneNumber}}</text>
   </view>
 </view>
 <view class='people'>
   <view class='peopleBar'><text class='title'>参与人</text></view>
   <view class='peopleInfo'>
-    <view class='person'wx:for="{{people}}" wx:for-item="person" wx:key="{{people.id}}" >
+    <view class='person'wx:for="{{it.people}}" wx:for-item="person" wx:key="{{people.id}}" >
       <wxc-avatar class="peopleAvatar" src="{{person.url}}" ></wxc-avatar>
       <text class='personName'>{{person.name}}</text>
     </view>
@@ -38,7 +38,7 @@
     <image src='/images/activity-indetail/upload.png' class='uploadIcon'></image>
     <text class='uploadWord'>上传</text>
   </view>
-  <view class='showPic' wx:for="{{album}}" wx:for-item="pic" wx:key="{{pic.id}}">
+  <view class='showPic' wx:for="{{it.album}}" wx:for-item="pic" wx:key="{{pic.id}}">
     <image src='{{pic.url}}' class='Image'></image>
     <text class='picName'>{{pic.name}}</text>
   </view>

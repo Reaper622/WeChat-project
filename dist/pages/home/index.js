@@ -6,80 +6,16 @@ Page({
    */
   data: {
     Content:[
-      { id: 0, src: '/images/home/course1.png', title: '免费试听课', words: '五周年感恩活动，全网免费试听' },
-      { id: 1, src: '/images/home/course2.png', title: '免费试听课', words: '五周年感恩活动，全网免费试听' },
-      { id: 2, src: '/images/home/course3.png', title: '免费试听课', words: '五周年感恩活动，全网免费试听' },
-      { id: 3, src: '/images/home/course4.png', title: '免费试听课', words: '五周年感恩活动，全网免费试听' },
     ],
     inforList:[
-      { id:0, content: '你报名的 "携手合众 你我共赢" 已经开始了！' },
-      { id:1,content: '该小程序为测试版本！' },
-      { id:2,content: 'programmer：ReaperLee！' }
     ],
-    tabs: [
-      {
-        title: '全部', activities: [
-          {
-            url: '/images/activity/activity.png',
-            title: '奇趣小手艺 浓浓亲子情',
-            time: '2018.10.01 - 2018.10.05',
-            address: '石桥辅正街 99 号红糟房',
-            number: '24'
-          },
-          {
-            url: '/images/activity/activity2.png',
-            title: '携手合众 你我共赢',
-            time: '2018.10.01 - 2018.10.05',
-            address: '石桥辅正街 99 号红糟房',
-            number: '34'
-          },
-          {
-            url: '/images/activity/activity2.png',
-            title: '携手合众 你我共赢',
-            time: '2018.10.01 - 2018.10.05',
-            address: '石桥辅正街 99 号红糟房',
-            number: '54'
-          }
-        ]},
-      {
-        title: '亲子', activities: [
-          {
-            url: '/images/activity/activity.png',
-            title: '奇趣小手艺 浓浓亲子情',
-            time: '2018.10.01 - 2018.10.05',
-            address: '石桥辅正街 99 号红糟房',
-            number: '24'
-          },
-          {
-            url: '/images/activity/activity2.png',
-            title: '携手合众 你我共赢',
-            time: '2018.10.01 - 2018.10.05',
-            address: '石桥辅正街 99 号红糟房',
-            number: '34'
-          }
-        ]},
-      {
-        title: '户外', activities: [
-
-          {
-            url: '/images/activity/activity2.png',
-            title: '携手合众 你我共赢',
-            time: '2018.10.01 - 2018.10.05',
-            address: '石桥辅正街 99 号红糟房',
-            number: '34'
-          }
-        ]},
-      {
-        title: '夏令营', activities: [
-          {
-            url: '/images/activity/activity2.png',
-            title: '携手合众 你我共赢',
-            time: '2018.10.01 - 2018.10.05',
-            address: '石桥辅正街 99 号红糟房',
-            number: '34'
-          }
-        ]}
+    tabs:[
+      { title: "全部"},
+      { title: "亲子"},
+      { title: "户外"},
+      { title: "夏令营"}
     ],
+    activityinprocess:{},
     indicatorDots: true,
     autoplay: true,
     interval: 5000,
@@ -90,7 +26,60 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    var host = "https://easy-mock.com/mock/5b72816677e37d07a4181f9b/wechat/home";
+    var that = this;
+    //获取进行中的活动
+    wx.request({
+      url: host +'/activity-inprocess',
+      header:{
+        'content-type':'application/json'
+      },
+      success:function(res){
+        console.log(res.data);
+        that.setData({
+          activityinprocess:res.data
+        })
+      }
+    });
+  //获得活动列表
+  wx.request({
+    url: host +'/tabs',
+    header:{
+      'content-type': 'application/json'
+    },
+    success:function(res){
+      that.setData({
+        tabs:res.data.tabs
+      })
+      console.log(res.data);
+    }
+  });
+  //获得消息通知
+  wx.request({
+    url: host + '/info',
+    header: {
+      'content-type': 'application/json'
+    },
+    success: function (res) {
+      that.setData({
+        inforList: res.data.inforList
+      })
+      console.log(res.data);
+    }
+  });
+  //获得轮播内容
+  wx.request({
+    url: host+'/content',
+    header: {
+      'content-type': 'application/json'
+    },
+    success: function (res) {
+      that.setData({
+        Content: res.data.Content
+      })
+      console.log(res.data);
+    }
+  })
   },
 
   /**

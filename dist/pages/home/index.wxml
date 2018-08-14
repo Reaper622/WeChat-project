@@ -24,7 +24,7 @@
   <view class='in-process'>
     <navigator url='/pages/activity-indoing/index'><text id='process'>进行中</text> <text id='processPic'>></text></navigator>
   </view>
-  <activity url="/images/activity/activity.png" title="奇趣小手艺 浓浓亲子情" time="2018.10.01 - 2018.10.05" address="石桥辅正街 99 号红糟房" ></activity>
+  <activity url="{{activityinprocess.url}}" title="{{activityinprocess.title}}" time="{{activityinprocess.time}}" address="{{activityinprocess.address}}" ></activity>
 </view>
 
 <view class='activity-all'>
@@ -42,6 +42,7 @@
       wx:key="{{tab}}"
       tab-index="{{index}}"
       component-id="c1"
+      wx:if="{{tab.title}}"
       label="{{tab.title}}"
     >
     <activity wx:for="{{tab.activities}}" wx:for-item="activity" wx:key="{{activity}}" url="{{activity.url}}" title="{{activity.title}}" time="{{activity.time}}" address="{{activity.address}}" number="{{activity.number}}" ></activity>
