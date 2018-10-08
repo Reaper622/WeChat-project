@@ -20,4 +20,4 @@
 - debug
 
  
-[逻辑图 by 蓝湖](https://lanhuapp.com/url/UDwz7)
+[逻辑图 by 蓝湖](https://lanhuapp.com/web/#/item/board?pid=a1a3dabf-b55d-4ade-a392-fe2aa6eeed68)
